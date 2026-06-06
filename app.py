@@ -110,6 +110,7 @@ def run_backtest():
 @app.route('/')
 def home():
     return jsonify({'status': 'AlgoDesk Backtest Engine running!'})
+
 if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 5000))
